@@ -23,6 +23,7 @@ def calculate(jumpermass,jumperheight):
   adstring = additionalstring(startheight,fheight,stretch,jumperheight,unstretch)
   if adstring < 0:
     print('This is an unsafe situation. The customer should not jump, or they may be injured. DO NOT CONTINUE!')
+    addstringlabel["text"] = "This is an unsafe situation. The customer should not jump, or they may be injured. DO NOT CONTINUE!"
   else:
     addstringlabel["text"] = f"{adstring}"
     print(f'You should add {adstring} meters of rope to the cord. This will ensure that the jumper gets to the target height.')
