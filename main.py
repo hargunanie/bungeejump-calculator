@@ -89,6 +89,8 @@ except FileNotFoundError: #if no existing file for initialization is found, set 
   with open('jumpsetup.txt', 'w') as datafile:
     datafile.write(f"{startheight}\n{buffer}\n{nogo}\n{unstretch}\n{grav}\n{spring}")
   print("Initial setup complete!")
+  setupcomplete = tk.Label(master=mainframe, text='Initial setup complete!').grid(row="1", column="1")
+  lastrow = 1
 
 
 # Used for square roots in stretchcalc function
@@ -98,7 +100,7 @@ massentry.grid(row=str(lastrow + 2), column = "0")
 
 #print(massentry)
 
-heightlabel = tk.Label(mainframe, text=' Input height of jumper (kg): ').grid(row=str(lastrow + 1), column=1)
+heightlabel = tk.Label(mainframe, text=' Input height of jumper (m): ').grid(row=str(lastrow + 1), column=1)
 heightentry = tk.Entry(mainframe)
 heightentry.grid(row=str(lastrow + 2), column = "1")
 
