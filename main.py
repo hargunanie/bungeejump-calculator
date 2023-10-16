@@ -22,7 +22,7 @@ def calculate(jumpermass,jumperheight):
   #print("\n\n-------------------------------------------------\n\n")
   adstring = additionalstring(startheight,fheight,stretch,jumperheight,unstretch)
   if adstring < 0:
-    print('This is an unsafe situation. The customer should not jump, or they may be injured. DO NOT CONTINUE!')
+    print('This is an unsafe situation. The customer should not jump, or they may be injured. DO NOT CONTINUE! Here be dragons')
     addstringlabel["text"] = "This is an unsafe situation. The customer should not jump, or they may be injured. DO NOT CONTINUE!"
   else:
     addstringlabel["text"] = f"{adstring}"
